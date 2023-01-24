@@ -1,13 +1,96 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  overflow-y: scroll;
+  color: #3E4959;
+  background: #E5E5E5;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: -0.02em;
+  line-height: 24px;
+}
+
+body, #root {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+main {
+  max-width: 375px;
+  margin: 0 auto;
+  background: #FAFAFD;
+  padding: 16px;
+  display: flex;
+  flex-flow: column;
+  gap: 32px;
+}
+
+hr {
+  margin: 0 16px;
+  border: none;
+  border-top: 2px solid #F8F8F9;
+}
+
+.type-header-container {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  margin: 0 0 8px 8px;
+}
+
+.type-header-icon {
+  margin-right: 4px;
+}
+
+.type-header-title {
+  color: #828B97;
+}
+
+.users-list {
+  background: #FFFFFF;
+  box-shadow: 0 3px 24px rgba(130, 139, 151, 0.06);
+  border-radius: 16px;
+}
+
+.users-list-item {
+  padding: 24px 16px;
+  display: flex;
+  flex-flow: row;
+  gap: 16px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.users-list > hr:last-child {
+  display: none;
+}
+
+.invite-list-item {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.invite-list-item p {
+  color: #828B97;
+}
+
+.badge {
+  background: #EEEFF2;
+  padding: 0 10px;
+}
+
+.pill {
+  border-radius: 24px;
+}
+
+.badge p {
+  line-height: 20px;
 }
